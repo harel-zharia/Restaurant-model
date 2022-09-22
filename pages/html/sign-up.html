@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign-up page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+<script src='../js/sign-up.js'></script>
+</head>
+<body>
+
+<div id="signup-form">
+    <h1 id="signup-h1">Sign-up page</h1>
+<div id="in-form">
+    <form name="validator" action="/sign-up" method="post" onsubmit="return validate()">
+    <label>First name</label><br>
+    <input type="text" name="firstName" required minlength="2" maxlength="20"  placeholder="first name"><br>
+    <label>Last name</label><br>
+    <input type="text" name="lastName" required minlength="2" maxlength="20" placeholder="last name"><br>
+    <label>Email</label><br>
+    <input type="email" required name="email" placeholder="Enter email"><br>
+    <label>Password</label><br>
+    <input type="text" name="password" placeholder="Enter password"><br>
+    <label>Confirm password</label><br>
+    <input type="text" name="confirmPassword" placeholder="confirm password"><br><br>
+    <input type="submit" id="submiting" value="sign-up">
+</form>
+<p id="para-1">By clicking the sign-up button , you agree to our<br>
+    <a href="#" class="sign-up-a">Terms and conditions</a> and <a href="#" class="sign-up-a">Policy privacy</a>
+</p>
+<p class="para-2">already have an account? <a href='/sign-in' class="sign-up-a" >sign-in here!</a> </p>
+</div>
+</div>
+
+
+</body>
+</html>
