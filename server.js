@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const bp = require('body-parser');
 const db = require('mongoose');
-const crypto = require('crypto');
 
 app.use(bp.json());
 app.use(bp.urlencoded({ extended: false }));
